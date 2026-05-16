@@ -1,12 +1,12 @@
 package parrot;
 
 /**
- * Clase base abstracta para la jerarquia de loros.
- * La idea es conservar el punto comun mientras cada subclase define su propio comportamiento.
+ * Contrato comun para cualquier loro del kata.
+ * Cada implementacion concreta define su propia velocidad y su propio grito.
  */
-public abstract class Parrot {
+public interface Parrot {
 
-    public abstract double getSpeed();
+    double getSpeed();
 
-    public abstract String getCry();
+    String getCry();
 }

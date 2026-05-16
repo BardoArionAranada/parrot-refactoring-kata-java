@@ -4,10 +4,7 @@ package parrot;
  * Tercera subclase extraida.
  * Representa al loro noruego azul antes de mover la logica fuera de la clase base.
  */
-public class NorwegianBlueParrot extends Parrot {
-
-    private static final double MAX_SPEED = 24.0;
-    private static final double VOLTAGE_FACTOR = 12.0;
+public class NorwegianBlueParrot implements Parrot {
     private final double voltage;
     private final boolean isNailed;
 
@@ -19,7 +16,7 @@ public class NorwegianBlueParrot extends Parrot {
     @Override
     public double getSpeed() {
         // Si esta clavado, no se mueve; si no, la velocidad depende del voltaje.
-        return isNailed ? 0 : Math.min(MAX_SPEED, voltage * VOLTAGE_FACTOR);
+        return isNailed ? 0 : Math.min(ParrotRules.MAX_SPEED, voltage * ParrotRules.VOLTAGE_FACTOR);
     }
 
     @Override
