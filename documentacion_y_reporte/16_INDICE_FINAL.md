@@ -4,7 +4,7 @@ Este archivo sirve como mapa rapido para revisar el proyecto sin perderse.
 
 ## Orden sugerido de lectura
 
-1. `00_GUIA_PROYECTO.md`
+1. `00_GUIA_PROYECTO.md`  Este archivo explica que se pidio y como se trabajo.
 2. `01_ANALISIS_LEGACY.md`
 3. `02_PLAN_REFACTORIZACION.md`
 4. `03_BITACORA_MICRO_PASO_1.md`
