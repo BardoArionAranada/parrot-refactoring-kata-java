@@ -1,8 +1,8 @@
 package parrot;
 
 /**
- * Primera subclase extraida.
- * Hace explicito el comportamiento europeo antes de quitar el switch heredado.
+ * Implementacion del loro europeo.
+ * Su velocidad y su grito son siempre fijos.
  */
 public final class EuropeanParrot implements Parrot {
 

@@ -1,8 +1,8 @@
 package parrot;
 
 /**
- * Tercera subclase extraida.
- * Representa al loro noruego azul antes de mover la logica fuera de la clase base.
+ * Implementacion del loro noruego azul.
+ * Su velocidad depende del voltaje y de si esta clavado.
  */
 public final class NorwegianBlueParrot implements Parrot {
     private final double voltage;
@@ -15,13 +15,13 @@ public final class NorwegianBlueParrot implements Parrot {
 
     @Override
     public double getSpeed() {
-        // Si esta clavado, no se mueve; si no, la velocidad depende del voltaje.
+        // Un loro clavado no se mueve; en caso contrario, el voltaje define la velocidad.
         return isNailed ? 0 : Math.min(ParrotRules.MAX_SPEED, voltage * ParrotRules.VOLTAGE_FACTOR);
     }
 
     @Override
     public String getCry() {
-        // El voltaje decide si el loro habla o si se queda en silencio.
+        // El voltaje decide si el loro emite un zumbido o silencio.
         return voltage > 0 ? "Bzzzzzz" : "...";
     }
 }

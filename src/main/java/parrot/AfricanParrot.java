@@ -1,8 +1,8 @@
 package parrot;
 
 /**
- * Primer corte del comportamiento africano como clase propia.
- * La logica aun refleja la regla heredada mientras seguimos el refactor por pasos pequenos.
+ * Implementacion del loro africano.
+ * Su velocidad depende de la cantidad de cocos que carga.
  */
 public final class AfricanParrot implements Parrot {
     private final int numberOfCoconuts;
@@ -13,13 +13,13 @@ public final class AfricanParrot implements Parrot {
 
     @Override
     public double getSpeed() {
-        // La regla actual deja el calculo de velocidad africana facil de leer en un solo lugar.
+        // Cada coco reduce la velocidad segun la regla del kata.
         return Math.max(0, ParrotRules.BASE_SPEED - ParrotRules.COCONUT_PENALTY * numberOfCoconuts);
     }
 
     @Override
     public String getCry() {
-        // El loro africano tiene un grito fijo.
+        // El loro africano siempre mantiene el mismo grito.
         return "Sqaark!";
     }
 }
