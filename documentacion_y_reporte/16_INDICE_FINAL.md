@@ -20,6 +20,7 @@ Este archivo sirve como mapa rapido para revisar el proyecto sin perderse.
 14. `13_BITACORA_MICRO_PASO_11.md`
 15. `14_RESUMEN_CIERRE.md`
 16. `15_BITACORA_MICRO_PASO_12.md`
+17. `17_NOTA_HISTORIAL_COMMIT.md`
 
 ## Idea general
 
