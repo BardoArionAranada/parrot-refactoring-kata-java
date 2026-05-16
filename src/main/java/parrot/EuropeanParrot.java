@@ -4,7 +4,7 @@ package parrot;
  * Primera subclase extraida.
  * Hace explicito el comportamiento europeo antes de quitar el switch heredado.
  */
-public class EuropeanParrot implements Parrot {
+public final class EuropeanParrot implements Parrot {
 
     @Override
     public double getSpeed() {

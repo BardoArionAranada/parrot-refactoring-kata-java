@@ -4,7 +4,7 @@ package parrot;
  * Primer corte del comportamiento africano como clase propia.
  * La logica aun refleja la regla heredada mientras seguimos el refactor por pasos pequenos.
  */
-public class AfricanParrot implements Parrot {
+public final class AfricanParrot implements Parrot {
     private final int numberOfCoconuts;
 
     public AfricanParrot(int numberOfCoconuts) {

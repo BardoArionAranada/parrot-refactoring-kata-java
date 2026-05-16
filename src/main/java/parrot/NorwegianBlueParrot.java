@@ -4,7 +4,7 @@ package parrot;
  * Tercera subclase extraida.
  * Representa al loro noruego azul antes de mover la logica fuera de la clase base.
  */
-public class NorwegianBlueParrot implements Parrot {
+public final class NorwegianBlueParrot implements Parrot {
     private final double voltage;
     private final boolean isNailed;
 
