@@ -21,6 +21,7 @@ Este archivo sirve como mapa rapido para revisar el proyecto sin perderse.
 15. `14_RESUMEN_CIERRE.md`
 16. `15_BITACORA_MICRO_PASO_12.md`
 17. `17_NOTA_HISTORIAL_COMMIT.md`
+18. `18_METRICAS_Y_VERIFICACION.md`
 
 ## Idea general
 
@@ -33,4 +34,4 @@ La documentacion cuenta el proceso completo:
 
 ## Nota
 
-Todo esta escrito en español para que la lectura sea mas rapida y mas clara.
+Todo esta escrito en espanol para que la lectura sea mas rapida y mas clara.
