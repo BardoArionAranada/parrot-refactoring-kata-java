@@ -6,17 +6,18 @@ package parrot;
  */
 public class AfricanParrot extends Parrot {
 
+    private static final double BASE_SPEED = 12.0;
+    private static final double COCONUT_PENALTY = 9.0;
     private final int numberOfCoconuts;
 
     public AfricanParrot(int numberOfCoconuts) {
-        super(ParrotTypeEnum.AFRICAN, numberOfCoconuts, 0, false);
         this.numberOfCoconuts = numberOfCoconuts;
     }
 
     @Override
     public double getSpeed() {
         // La regla actual deja el calculo de velocidad africana facil de leer en un solo lugar.
-        return Math.max(0, 12.0 - 9.0 * numberOfCoconuts);
+        return Math.max(0, BASE_SPEED - COCONUT_PENALTY * numberOfCoconuts);
     }
 
     @Override

@@ -6,14 +6,12 @@ package parrot;
  */
 public class EuropeanParrot extends Parrot {
 
-    public EuropeanParrot() {
-        super(ParrotTypeEnum.EUROPEAN, 0, 0, false);
-    }
+    private static final double BASE_SPEED = 12.0;
 
     @Override
     public double getSpeed() {
         // El loro europeo siempre vuela a la velocidad base.
-        return 12.0;
+        return BASE_SPEED;
     }
 
     @Override

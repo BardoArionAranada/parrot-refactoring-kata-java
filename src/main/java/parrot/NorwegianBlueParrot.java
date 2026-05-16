@@ -6,11 +6,12 @@ package parrot;
  */
 public class NorwegianBlueParrot extends Parrot {
 
+    private static final double MAX_SPEED = 24.0;
+    private static final double VOLTAGE_FACTOR = 12.0;
     private final double voltage;
     private final boolean isNailed;
 
     public NorwegianBlueParrot(double voltage, boolean isNailed) {
-        super(ParrotTypeEnum.NORWEGIAN_BLUE, 0, voltage, isNailed);
         this.voltage = voltage;
         this.isNailed = isNailed;
     }
@@ -18,7 +19,7 @@ public class NorwegianBlueParrot extends Parrot {
     @Override
     public double getSpeed() {
         // Si esta clavado, no se mueve; si no, la velocidad depende del voltaje.
-        return isNailed ? 0 : Math.min(24.0, voltage * 12.0);
+        return isNailed ? 0 : Math.min(MAX_SPEED, voltage * VOLTAGE_FACTOR);
     }
 
     @Override
